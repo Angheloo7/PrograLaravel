@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/persona/estudiante', function () {
+    //return view('welcome');
+    return "Hola desde la ruta persona estudiante";
+});

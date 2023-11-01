@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="POST" action="{{route('personas.guardar')}}">
+    <form method="POST" action="{{ route('personas.guardar') }}">
+
+    @csrf
         <label for="nombre">Nombre:</label>
         <input type="text" name="nombre" id="nombre">
 

@@ -7,7 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Producto guardado</h2>
-    <p><a href="{{route('productos.crear')}}">Volver al formulario</a></p>
+   
+
+        <h2>Persona guardado</h2>
+        <p><a href="{{ route('personas.crear') }}">Volver al formulario</a></p>
+
 </body>
 </html>

@@ -27,4 +27,4 @@ Route::get('/', function () {
 Route::get('/personas/crear',[PersonaController::class,'crear'])->name('personas.crear');
 
 //guardar datos a la BD
-Route::post('/personas',[PersonaController::class,'guardar'])->name('personas.guardar');
+Route::post('/personas', [PersonaController::class, 'guardar'])->name('personas.guardar');

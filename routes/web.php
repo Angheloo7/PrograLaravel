@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PersonaController;
+use App\Http\Controllers\MascotaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -28,3 +29,9 @@ Route::get('/personas/crear',[PersonaController::class,'crear'])->name('personas
 
 //guardar datos a la BD
 Route::post('/personas', [PersonaController::class, 'guardar'])->name('personas.guardar');
+
+//formulario
+Route::get('/mascotas/crear',[MascotaController::class,'registrar'])->name('mascotas.crear');
+
+//guardar datos a la BD
+Route::post('/mascotas', [MascotaController::class, 'almacenar'])->name('mascotas.guardar');

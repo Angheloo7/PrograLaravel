@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\PersonaController;
 use App\Http\Controllers\MascotaController;
+use App\Http\Controllers\EstudianteController;
+use App\Http\Controllers\DocenteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -35,3 +37,17 @@ Route::get('/mascotas/crear',[MascotaController::class,'registrar'])->name('masc
 
 //guardar datos a la BD
 Route::post('/mascotas', [MascotaController::class, 'almacenar'])->name('mascotas.guardar');
+
+
+//formulario
+Route::get('/estudiantes/crear',[EstudianteController::class,'crear'])->name('estudiantes.crear');
+
+//guardar datos a la BD
+Route::post('/estudiantes', [EstudianteController::class,'guardar'])->name('estudiantes.guardar');
+
+//formulario
+Route::get('/docentes/crear',[DocenteController::class,'crear'])->name('docentes.crear');
+
+//guardar datos a la BD
+Route::post('/docentes', [DocenteController::class,'guardar'])->name('docentes.guardar');
+
